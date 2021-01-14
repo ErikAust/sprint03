@@ -1,0 +1,61 @@
+* {
+    box-sizing:    border-box;
+    font-family:   'Lato', sans-serif;
+    border-radius: 5px;
+  }
+  
+  #cookiesBox {
+    margin:    0 auto;
+    width:     400px;
+    max-width: 500px;
+  }
+  
+  #cookiesBox > div {
+    margin: 20px auto;
+  }
+ 
+  #buttonsBlock {
+    display:         flex;
+    justify-content: space-between;
+    padding:         10px;
+  }
+  
+  #addBtn, #clearBtn {
+    outline: none;
+    border:  none;
+    padding: 5px;
+  }
+  
+  #addBtn {
+    background: #82cbca;
+    color:      white;
+  }
+  
+  #clearBtn {
+    background: #8a2a21;
+    color:      white;
+  }
+  
+  #addBtn:active, #clearBtn:active { box-shadow: 0 0 3px grey; }
+  
+  #textArea, #notesArchive {
+    margin:     0 auto;
+    background: #f0f0f0;
+    padding:    15px;
+  }
+  
+  #cookiesText {
+    margin: 15px auto 0px auto;
+    width:  100%;
+  }
+  
+  #notesTextArea {
+    margin: 15px;
+    background: white;
+    padding: 5px;
+  }
+  
+  #notesTextArea > span {
+    display: block;
+  }
+  

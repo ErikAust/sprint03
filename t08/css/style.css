@@ -1,0 +1,63 @@
+main {
+    display:               grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4em 1fr;
+    grid-template-areas:
+      "h1 notification"
+      "table table";
+  }
+  
+  h1 {
+    grid-area:  h1;
+    text-align: left;
+  }
+  
+  #notification {
+    text-align: right;
+    grid-area:  notification;
+    line-height: 4em;
+  }
+  
+  #notification span {
+    background: #808080;
+    padding: 16px;
+    border-radius: 32px;
+  }
+  
+  #placeholder {
+    grid-area: table;
+  }
+  
+  #heroTable {
+    margin: 0 auto;
+    background:      #d3d3d3;
+    border: 2px solid black;
+    text-align:      center;
+    width:           60%;
+    max-width:       700px;
+    min-width:       400px;
+    border-collapse: collapse;
+    padding:         1px;
+    font-size:       16px;
+  }
+  
+  #heroTable td {
+    width:   33.3%;
+    border:  1px solid white;
+    padding: 0.5em;
+  }
+  
+  #heroTable > thead td {
+    padding: 0;
+  }
+  
+  #heroTable input {
+    width:       100%;
+    height:      2.5em;
+    font-family: inherit;
+    font-size:   inherit;
+    border:      none;
+    background:  #c6422f;
+    outline:     #3b424b;
+  }
+  
